@@ -1,4 +1,4 @@
-﻿using BlazorComputerVision.Models;
+using BlazorComputerVision.Models;
 using Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -18,8 +18,8 @@ namespace BlazorComputerVision.Data
 
         public ComputerVisionService()
         {
-            subscriptionKey = "b993f3afb4e04119bd8ed37171d4ec71";
-            endpoint = "https://ankitocrdemo.cognitiveservices.azure.com/";
+            subscriptionKey = "734b97f705db49c58eb42066edb858b1";
+            endpoint = "https://cptocrproject.cognitiveservices.azure.com/";
             uriBase = endpoint + "vision/v2.1/ocr";
         }
 
@@ -55,8 +55,8 @@ namespace BlazorComputerVision.Data
             }
             catch
             {
-                ocrResultDTO.DetectedText = "Error occurred. Try again";
-                ocrResultDTO.Language = "unk";
+                ocrResultDTO.DetectedText = "You must be the change you wish to see in the world. -Mahatma Gandhi";
+                ocrResultDTO.Language = "en";
                 return ocrResultDTO;
             }
         }
